@@ -1,38 +1,267 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@font-face {
+    font-family: avenir;
+    src: url(./AvenirNext.otf);
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  .light-text, a{
+    font-family: avenir, sans-serif;
+    font-weight: 300;
 }
-
-.App-link {
-  color: #61dafb;
+.logo-wa{
+    bottom: 0;
+    margin-bottom: 40px;
+left: calc(90% - 45px);
+z-index: 10;
+  position: fixed;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body{
+    font-family: 'Baskervville', serif;
+    overflow:auto;
+    overflow-x: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1, h2,h3,h4,h5 {
+    font-family: 'Baskervville', sans-serif;
+    font-weight: 700;
   }
-}
+
+  #about{
+    background-color: rgb(242,243,230);
+    border-radius: 50px;
+    padding: 15px;
+  }
+  .navbar{
+    background-color: rgb(242,243,230);
+  }
+  #landing-page{
+      height: 80vh;
+      background-image: url('./images/bg/dates.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+  }
+  .wrap {
+      position: relative;
+      width: 100%;
+    }
+  .content-news{
+      padding: 20px;
+    }
+    .image {
+      display: block;
+      width: 100%;
+      border-radius: 50px;
+      height: 500px;
+      object-fit: cover;
+    }
+    .card-img-top {
+      width: 100%;
+      border-radius: 50px 50px 0 0;
+      height: 400px;
+      object-fit: cover;
+    }
+    .news-card{
+      border:none;
+      -webkit-box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.3);
+      -moz-box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.3);
+      box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.3);
+      border-radius: 50px;
+    
+    }
+    /* .first-partner{
+      border:none;
+      background-image: url('./images/frts/berries.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 30px 0px 0px 0px;
+    }
+    .second-partner{
+      border:none;
+      background-image: url('./images/frts/cherries.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .third-partner{
+      border:none;
+      background-image: url('./images/frts/kiwi.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 0px 30px 0px 0px;
+    }
+    .fourth-partner{
+      border:none;
+      background-image: url('./images/frts/grapes.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 0px 0px 0px 30px;
+    }
+    .fifth-partner{
+      border:none;
+      background-image: url('./images/frts/stone.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .sixth-partner{
+      border:none;
+      background-image: url('./images/frts/oranges.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 0px 0px 30px 0px;
+    }
+    .first-export{
+      border:none;
+      background-image: url('./images/frts/mangos.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 30px 0px 0px 30px;
+    }
+    .second-export{
+      border:none;
+      background-image: url('./images/frts/shallots.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .third-export{
+      border:none;
+      background-image: url('./images/frts/kanjoc.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 0px 30px 30px 0px;
+    } */
+    .partner-card{
+      height: 400px;
+      padding: 10px;
+    }
+    
+    .b {
+        text-decoration: none !important;
+    }
+    .d{
+      color:black;
+      text-decoration:none !important;
+    }
+    .d:hover{
+      color:grey
+    }
+    h1 {
+      font-weight: 700;
+    }
+
+  .navbar-toggler{
+      border: none;
+    }
+  
+  .hr-text {
+      line-height: 1em;
+      position: relative;
+      outline: 0;
+      border: 0;
+      color: black;
+      text-align: center;
+      height: 1.5em;
+      opacity: .5;
+    }
+    .hr-text:before {
+      content: '';
+      background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#818078), to(transparent));
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    .cool-link::after{
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: width .3s;
+     }
+     .cool-link:hover::after{
+      width: 100%;
+      transition: width .3s;
+     }
+    
+     
+    .hr-text:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+      padding: 0 .5em;
+      line-height: 1.5em;
+      color: #818078;
+      background-color: #fcfcfa;
+    }
+    a{
+        color:black
+    }
+    .navbar-toggler:focus{
+      outline: 0 !important;
+    }
+  .logo {
+      width: 15%;
+      
+  }
+  .product-page-header{
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+  }
+  .title{
+      padding-top: 20vh;
+      font-size: 7em;
+      font-weight: 100;
+  }
+  .logo-wa{
+      bottom: 0;
+      margin-bottom: 40px;
+  left: calc(90% - 45px);
+  z-index: 10;
+    position: fixed;
+  }
+  .grow { transition: all .2s ease-in-out; }
+  .grow:hover { transform: scale(1.01); }
+  .img{
+      object-fit: cover;
+      background-position: center;
+  }
+  
+  .dropdown-menu{
+    min-width: 80px;
+  }
+
+  @media (max-width: 768px) {
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        /* margin-left: 35%; */
+    }
+    #landing-page {
+      background-image: url('./images/smallwallpaper.jpg');
+    }
+  .logo{
+      width: 120px;
+      justify-content: center;
+  }
+      .title{
+        font-size: 2.5em;
+      }
+    }
+ 
+  
+
+  
