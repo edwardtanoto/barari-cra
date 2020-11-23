@@ -51,9 +51,9 @@ export const Header = () => {
                 display: 'flex', justifyContent: 'flex-end',
                 width: '100%'
             }}>
-                <img className="top" src={ig} style={{ width: '36px' }} />
+                <img src={ig} style={{ width: '36px' }} />
                 &nbsp;&nbsp;&nbsp;
-                <img className="top" src={mail} style={{ width: '36px' }} />
+                <img src={mail} style={{ width: '36px' }} />
                 <NavDropdown bg="light" style={{ color: 'black' }} title="EN" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Bahasa Indonesia</NavDropdown.Item>
