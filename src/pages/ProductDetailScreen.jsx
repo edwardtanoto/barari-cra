@@ -1,8 +1,7 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState';
 import { Link } from 'react-router-dom'
 import { Row, Col } from 'react-bootstrap'
-import { Product } from '../components/Product'
 import ImageGallery from 'react-image-gallery';
 import { kebabcase } from '../utils/kebabcase'
 import shopee from '../images/shopee-seeklogo.com.svg'
@@ -31,6 +30,9 @@ export const ProductDetailScreen = ({ match }) => {
                                 <div><h6>Shop Now</h6>
                                     <img width="36px" src={tokped} />
                                     <img width="36px" src={shopee} />
+                                </div>
+                                <div className="d-flex justify-content-end">
+                                    <Link className="a" to="/products">&lt;&lt; Back</Link>
                                 </div>
                             </Col>
 
