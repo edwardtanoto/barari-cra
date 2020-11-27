@@ -8,7 +8,6 @@ import mail from '../images/icons8-secured-letter-64.png'
 export const Footer = () => {
     return (
         <div>
-            <h2 id="contact" class="text-center mt-5">Interested to know more?</h2>
             <section class="container mt-5 mb-3" id="contact">
                 <p class="text-center">
                     <a href="#"><img class="grow" src={shopee} width="50px" alt="Shopee" /></a>&nbsp;&nbsp;&nbsp;<a href="#" ><img src={tokped} width="50px" class="grow" alt="Tokopedia" /></a>&nbsp;&nbsp;&nbsp;<a href="#"><img class="grow" src={ig} width="55px" alt="Instagram" /></a>&nbsp;&nbsp;&nbsp;<a href="mailto:info@barari-indonesia.com"><img src={mail} width="52px" class="grow" alt="Mail" /></a></p>

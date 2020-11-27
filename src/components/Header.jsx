@@ -4,10 +4,16 @@ import { Navbar, Form, Button, Nav, NavDropdown, FormControl } from 'react-boots
 import logo from '../images/LOGO.png'
 import ig from '../images/icons8-instagram.svg'
 import mail from '../images/icons8-secured-letter-64.png'
+import { useTranslation } from 'react-i18next';
 
 import '../App.css';
 
 export const Header = () => {
+    const { t, i18n } = useTranslation();
+
+    const handleClick = lang => {
+        i18n.changeLanguage(lang)
+    }
 
     return (
 
@@ -46,36 +52,33 @@ export const Header = () => {
         //     </nav>
         //  </header>
         <>
-            <div style={{
-                padding: '10px', backgroundColor: '#BEC1A4',
-                display: 'flex', justifyContent: 'flex-end',
-                width: '100%'
-            }}>
-                <img src={ig} style={{ width: '36px' }} />
-                &nbsp;&nbsp;&nbsp;
-                <img src={mail} style={{ width: '36px' }} />
-                <NavDropdown bg="light" style={{ color: 'black' }} title="EN" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Bahasa Indonesia</NavDropdown.Item>
-                </NavDropdown>
+            <div className="top">
+                <img src={ig} width="36px" />
+                <img src={mail} width="36px" />
+                <button className="btn btn-light" onClick={() => handleClick('en')}>
+                    EN
+                </button>
+                <button className="btn btn-light" onClick={() => handleClick('id')}>
+                    ID
+                </button>
             </div>
-            <Navbar expand="lg" style={{ paddingLeft: '120px', paddingRight: '120px', }}>
+            <Navbar expand="lg" style={{ position: 'relative' }}>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="text-center">
                     <Nav className="justify-content-start">
-                        <Nav.Link to="/about">About</Nav.Link>
-                        <Nav.Link to="/retailers">Retailers</Nav.Link>
+                        <Link className="cool-link pl-5 pr-5 pt-1 pb-1 a" to="/about">About</Link>
+                        <Link className="cool-link pl-5 pr-5 pt-1 pb-1 a" to="/retailers">Retailers</Link>
                     </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse id="basic-navbar-nav" >
-                    <Navbar.Brand><Nav.Link to="/"><p style={{ textAlign: 'center' }}><img className="logo" src={logo} /></p></Nav.Link></Navbar.Brand>
+                    <Navbar.Brand><Link to="/"><p style={{ textAlign: 'center' }}><img className="logo" src={logo} /></p></Link></Navbar.Brand>
                 </Navbar.Collapse>
 
                 <Navbar.Collapse id="basic-navbar-nav" className="text-center">
                     <Nav className="ml-auto">
-                        <Nav.Link href="#home">Products</Nav.Link>
-                        <Nav.Link href="#link">Contact</Nav.Link>
+                        <Link className="cool-link pl-5 pr-5 pt-1 pb-1 a" to="/products">Products</Link>
+                        <Link className="cool-link pl-5 pr-5 pt-1 pb-1 a" to="/contact">Contact</Link>
                     </Nav>
                 </Navbar.Collapse>
 
