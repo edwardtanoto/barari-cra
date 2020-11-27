@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Navbar, Form, Button, Nav, NavDropdown, FormControl } from 'react-bootstrap'
 import logo from '../images/LOGO.png'
 import ig from '../images/icons8-instagram.svg'
-import mail from '../images/icons8-secured-letter-64.png'
+import mail from '../images/envelope.svg'
 import { useTranslation } from 'react-i18next';
 
 import '../App.css';
@@ -53,12 +53,14 @@ export const Header = () => {
         //  </header>
         <>
             <div className="top">
+                <a href="https://instagram.com/barari.indonesia"></a>
                 <img src={ig} width="36px" />
-                <img src={mail} width="36px" />
-                <button className="btn btn-light" onClick={() => handleClick('en')}>
+                <img src={mail} width="30px" />
+                &nbsp;
+                <button className="btn a btn-link" onClick={() => handleClick('en')}>
                     EN
                 </button>
-                <button className="btn btn-light" onClick={() => handleClick('id')}>
+                <button className="btn a btn-link" onClick={() => handleClick('id')}>
                     ID
                 </button>
             </div>
