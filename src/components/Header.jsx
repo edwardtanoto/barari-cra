@@ -54,7 +54,7 @@ export const Header = () => {
         <>
             <div className="top">
                 <a href="https://instagram.com/barari.indonesia"></a>
-                <img src={ig} width="36px" />
+                <img src={ig} width="35px" />
                 <img src={mail} width="30px" />
                 &nbsp;
                 <button className="btn a btn-link" onClick={() => handleClick('en')}>
