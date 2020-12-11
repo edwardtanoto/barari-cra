@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 
 export const ContactScreen = () => {
     return (
-        <section id="contact" className="pt-5">
+        <section id="contact" className="pt-5 pb-5">
             <div className="container">
                 <Row>
                     <Col md={1}>
