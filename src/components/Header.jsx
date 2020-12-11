@@ -16,41 +16,6 @@ export const Header = () => {
     }
 
     return (
-
-
-        // <header>
-        //     <nav className="navbar navbar-expand-md navbar-light" style={{ padding: '40px' }}>
-        //         <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        //             <ul className="navbar-nav mr-auto">
-        //                 <li className="nav-item">
-        //                     <a className="nav-link" href="./index.html">HOME</a>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <a className="nav-link" href="#">ABOUT US</a>
-        //                 </li>
-        //             </ul>
-        //         </div>
-        //         <div className="mx-auto order-0">
-        //             <a className="navbar-brand mx-auto" href="#"><img src={logo} width="150px" /></a>
-
-        //         </div>
-        //         <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 nav-left">
-        //             <ul className="navbar-nav ml-auto">
-        //                 <li className="nav-item">
-        //                     <a className="nav-link active" href="#">PRODUCTS</a>
-        //                 </li>
-        //                 <li className="nav-item">
-        //                     <a className="nav-link" href="#">CONTACT US</a>
-        //                 </li>
-        //             </ul>
-
-        //         </div>
-
-        //         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-        //             <span className="navbar-toggler-icon"></span>
-        //         </button>
-        //     </nav>
-        //  </header>
         <>
             <div className="top">
                 <a href="https://instagram.com/barari.indonesia"></a>
@@ -65,7 +30,7 @@ export const Header = () => {
                 </button>
             </div>
             <Navbar expand="lg" style={{ position: 'relative' }}>
-
+                <Navbar.Brand className="d-block d-sm-block  d-lg-none d-md-block"><Link to="/"><p style={{ textAlign: 'center' }}><img className="logo" src={logo} /></p></Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="text-center">
                     <Nav className="justify-content-start">
@@ -74,7 +39,7 @@ export const Header = () => {
                     </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse id="basic-navbar-nav" >
-                    <Navbar.Brand><Link to="/"><p style={{ textAlign: 'center' }}><img className="logo" src={logo} /></p></Link></Navbar.Brand>
+                    <Navbar.Brand className="d-none d-md-block"><Link to="/"><p style={{ textAlign: 'center' }}><img className="logo" src={logo} /></p></Link></Navbar.Brand>
                 </Navbar.Collapse>
 
                 <Navbar.Collapse id="basic-navbar-nav" className="text-center">
@@ -83,9 +48,6 @@ export const Header = () => {
                         <Link className="cool-link pl-5 pr-5 pt-1 pb-1 a" to="/contact">Contact</Link>
                     </Nav>
                 </Navbar.Collapse>
-
-
-
             </Navbar>
         </>
     )

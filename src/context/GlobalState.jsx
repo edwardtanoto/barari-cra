@@ -1,6 +1,11 @@
 import React, { createContext, useReducer } from 'react'
 import AppReducer from './AppReducer'
+
+/* PUT THUMBNAIL IMAGES HERE */
 import test from '../images/products/Barari Select 1.jpg'
+
+
+/* GALLERY IMAGES HERE */
 
 const initialState = {
     products: [

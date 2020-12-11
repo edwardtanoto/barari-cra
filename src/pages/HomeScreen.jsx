@@ -6,19 +6,11 @@ export const HomeScreen = () => {
     return (
         <div>
             <div id="landing-page">
-                <h1 className="title"><b>It's a Date</b></h1>
+                <h1 className="title"><b>It's a date</b></h1>
             </div>
             <section className="about">
                 <div className="container">
                     <div className="row">
-                        {/* 
-                        <div className="col-lg-4 content-news">
-                            <div className="wrap">
-                                <div className="card news-card grow">
-                                    <img className="image" src={fruits} alt="Dates" />
-                                </div>
-                            </div>
-                        </div> */}
                         <div className="col-lg-12 align-self-center" style={{ padding: '20px' }}>
                             <h1>Premium Dates Importer</h1>
                             <br /><br />

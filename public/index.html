@@ -20,6 +20,13 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <form name="contact" method="POST" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea> 
+  <button className="mt-3 btn btn-dark" type="submit">Send</button>
+</form>
     <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
 
     <script

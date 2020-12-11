@@ -1,6 +1,6 @@
 import React from 'react'
 import wa from '../images/whatsapp.png'
-import shopee from '../images/shopee-seeklogo.com.svg'
+import shopee from '../images/shopee.png'
 import tokped from '../images/tokopedia-seeklogo.com.svg'
 import ig from '../images/icons8-instagram.svg'
 import mail from '../images/icons8-secured-letter-64.png'
@@ -8,9 +8,12 @@ import mail from '../images/icons8-secured-letter-64.png'
 export const Footer = () => {
     return (
         <div>
-            <section class="container mt-5 mb-3" id="contact">
+            <section class="container mt-5 mb-3">
                 <p class="text-center">
-                    <a href="#"><img class="grow" src={shopee} width="50px" alt="Shopee" /></a>&nbsp;&nbsp;&nbsp;<a href="#" ><img src={tokped} width="50px" class="grow" alt="Tokopedia" /></a>&nbsp;&nbsp;&nbsp;<a href="#"><img class="grow" src={ig} width="55px" alt="Instagram" /></a>&nbsp;&nbsp;&nbsp;<a href="mailto:info@barari-indonesia.com"><img src={mail} width="52px" class="grow" alt="Mail" /></a></p>
+                    <a href="#"><img class="grow" src={shopee} width="50px" alt="Shopee" /></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#" ><img src={tokped} width="50px" class="grow" alt="Tokopedia" /></a>&nbsp;&nbsp;&nbsp;
+                    <a href="#"><img class="grow" src={ig} width="53px" alt="Instagram" /></a>&nbsp;&nbsp;&nbsp;
+                    <a href="mailto:info@barari-indonesia.com"><img src={mail} width="55px" class="grow" alt="Mail" /></a></p>
             </section>
             <footer>
                 <div>
