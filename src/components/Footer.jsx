@@ -1,7 +1,7 @@
 import React from 'react'
 import wa from '../images/whatsapp.png'
 import shopee from '../images/shopee.png'
-import tokped from '../images/tokopedia-seeklogo.com.svg'
+import tokped from '../images/tokped.png'
 import ig from '../images/icons8-instagram.svg'
 import mail from '../images/icons8-secured-letter-64.png'
 
@@ -12,8 +12,8 @@ export const Footer = () => {
                 <p class="text-center">
                     <a href="#"><img class="grow" src={shopee} width="50px" alt="Shopee" /></a>&nbsp;&nbsp;&nbsp;
                     <a href="#" ><img src={tokped} width="50px" class="grow" alt="Tokopedia" /></a>&nbsp;&nbsp;&nbsp;
-                    <a href="#"><img class="grow" src={ig} width="53px" alt="Instagram" /></a>&nbsp;&nbsp;&nbsp;
-                    <a href="mailto:info@barari-indonesia.com"><img src={mail} width="55px" class="grow" alt="Mail" /></a></p>
+                    <a href="#"><img class="grow" src={ig} width="55px" alt="Instagram" /></a>&nbsp;&nbsp;&nbsp;
+                    <a href="mailto:info@barari-indonesia.com"><img src={mail} width="57px" class="grow" alt="Mail" /></a></p>
             </section>
             <footer>
                 <div>
@@ -22,14 +22,14 @@ export const Footer = () => {
                 <div class="container pt-5 border-bottom">
                     <div class="row">
                         <div class="col-md-7 col-sm-12 mb-3 text-left">
-                            <h5 class="mb-4 font-weight-bold text-uppercase">About</h5>
+                            <h5 class="mb-4 text-uppercase">About</h5>
                             <p class="mr-5 light-text">
                                 Barari Indonesia is an official importer of Barari product that has been established since 2013. Our vision is to become a trusted and reliable premium date fruits based company. We have a mission to raise Indonesian society's awareness to the highly nutritioned and countless benefits of date fruits, and also the snacks it can produced.
                 </p> </div>
                         <div class="col-md-5 col-sm-12">
 
                             <div class="col-md-6 col-sm-6 col-6 p-0 mb-3 float-left">
-                                <h5 class="mb-4 font-weight-bold text-uppercase">shop</h5>
+                                <h5 class="mb-4 text-uppercase">shop</h5>
                                 <ul class="list-group light-text">
                                     <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Shopee</a></li>
                                     <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Tokopedia</a></li>
@@ -37,7 +37,7 @@ export const Footer = () => {
                             </div>
 
                             <div class="col-md-6 col-sm-6 col-6 mb-3 p-0 float-left">
-                                <h5 class="mb-4 font-weight-bold text-uppercase">PAGE</h5>
+                                <h5 class="mb-4 text-uppercase">PAGE</h5>
                                 <ul class="list-group light-text">
                                     <li class="list-group-item bg-transparent border-0 p-0 mb-2">
                                         <a href="./products.html">PRODUCTS</a>

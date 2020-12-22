@@ -1,13 +1,17 @@
 @import '~react-image-gallery/styles/css/image-gallery.css';
 @font-face {
   font-family: avenir;
-  src: url(./AvenirNext.otf);
+  src: url(./AvenirNext.ttc) format('ttc');
+}
+@font-face {
+  font-family: baskerville;
+  src: url(./Baskerville.ttc) format('ttc');
 }
 
 .light-text,
 a {
   font-family: avenir, sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 .logo-wa {
   bottom: 0;
@@ -17,7 +21,7 @@ a {
   position: fixed;
 }
 body {
-  font-family: 'Baskervville', serif;
+  font-family: baskerville, serif;
   overflow: auto;
   overflow-x: hidden;
 }
@@ -31,9 +35,9 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-  font-family: 'Baskervville', sans-serif;
-  font-weight: 700;
+h5,
+h6 {
+  font-family: baskerville, sans-serif;
 }
 
 .cool-link::after {
@@ -200,9 +204,6 @@ h5 {
 }
 .d:hover {
   color: grey;
-}
-h1 {
-  font-weight: 700;
 }
 
 .navbar-toggler {
