@@ -38,7 +38,7 @@ export const ProductDetailScreen = ({ match }) => {
 
     class MyGallery extends React.Component {
         render() {
-            return <ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} />;
+            return <LazyLoad><ImageGallery items={images} showFullscreenButton={false} showPlayButton={false} /></LazyLoad>;
         }
     }
 
