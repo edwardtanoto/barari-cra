@@ -46,7 +46,7 @@ const initialState = {
         {
             "title": "Barari Curah Madu",
             "subtitle": "Algerian Deglet Nour",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non eaque ut. Provident id numquam dolorem sed reiciendis quaerat doloribus quisquam odit praesentium, unde iste quos officiis deserunt asperiores. Totam!",
+            "description": "Kurma Madu berasal dari Algeria, yang rasanya legit sekali. Jenis kurma ini banyak ditanam di Algeria dan Tunisia, sehingga dikenal dengan nama kurma Tunisia atau bisa disebut 'deglet noor'. Berbeda dengan jenis lainnya, Tunisia memiliki warna cokelat yang lebih cerah dari kurma lainnya. Daging buahnya agak kering dengan tekstur sedikit renyah.",
             "image": barari_biru,
             "gallery": [
                 bb2, bb3, bb4
@@ -55,7 +55,7 @@ const initialState = {
         {
             "title": "Barari Kurma Medjool",
             "subtitle": "Tunisian Medjool Dates",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non eaque ut. Provident id numquam dolorem sed reiciendis quaerat doloribus quisquam odit praesentium, unde iste quos officiis deserunt asperiores. Totam!",
+            "description": "Kurma dari California (AS) ini sedikit mencuri perhatian. Sebab ukurannya jauh berbeda dari jenis yang lain. Kurma Medjool tersebut berdaging tebal dengan biji kecil, mempunyai panjang seukuran ibu jari orang dewasa. kurma medjool buahnya berukuran besar, daging tebal, dan enak rasanya. Karenanya buah kurma medjool disebut king of date palm, artinya rajanya kurma. Warna kurma ini aslinya adalah coklat kehitam-hitaman, namun warna coklat muda yang ada pada kurma, bukan karena kurma ini lama, namun merupakan proses kristalisasi dari gula kurma itu sendiri karena semua kurma pasti mengandung gula.",
             "image": mm,
             "gallery": [
                 mm2, mm3, mm4
@@ -64,7 +64,7 @@ const initialState = {
         {
             "title": "Barari Medjoul Dates ",
             "subtitle": "Iraq Medjool Dates",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non eaque ut. Provident id numquam dolorem sed reiciendis quaerat doloribus quisquam odit praesentium, unde iste quos officiis deserunt asperiores. Totam!",
+            "description": "Salah satu kurma Medjoul/Medjool keluaran timur tengah, yang jadi salah satu peng-ekspor kurma terbesar di dunia. Asal usul pertama kurma Medjoul ini sebenernya datangnya dari Mesir bukan Amerika, Kurma Medjool/Medjoul di juluki Raja segara kurma karena bentuknya yang besar. Dianggap sebagai berlian kurma, mereka dihargai karena ukurannya yang besar, rasa manis yang luar biasa dan tekstur kenyal.",
             "image": mh,
             "gallery": [
                 mh2, mh3, mh4
@@ -73,7 +73,7 @@ const initialState = {
         {
             "title": "Barari Kurma Sukari Premium",
             "subtitle": "Saudi Dates",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non eaque ut. Provident id numquam dolorem sed reiciendis quaerat doloribus quisquam odit praesentium, unde iste quos officiis deserunt asperiores. Totam!",
+            "description": "Kurma Raja dan Ratu dari Saudi Arabia, Warna dagingnya cokelat muda mirip karamel, kurmanya bulat dan cenderung gemuk. Dagingnya lembut dan lumer waktu dimakan, sangat terasa rasa karamelnya. Selain itu, kurma sukari adalah salah satu jenis kurma yang digemari oleh para raja di Timur Tengah. Kurma ini favorit banget mungkin karena dagingnya kurmanya yang besar besar, dan rasanya juga lembut.",
             "image": bps,
             "gallery": [
                 bps2, bps3, bps4
@@ -82,7 +82,7 @@ const initialState = {
         {
             "title": "Barari Kurma Tunisia Curah",
             "subtitle": "Tunisian Dates",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non eaque ut. Provident id numquam dolorem sed reiciendis quaerat doloribus quisquam odit praesentium, unde iste quos officiis deserunt asperiores. Totam!",
+            "description": "Kurma Tunisia memang sudah terkenal karena rasanya yang memang tidak biasa, punya cita rasa tersendiri. Kurma inilah yang dikenal dengan nama 'deglet noor' yang banyak ditanam di Algeria dan Tunisia. Dibandingkan dengan kurma jenis lain, kurma ini warnanya lebih cokelat terang. Bagian kulit luarnya kenang dan kering. Sedangkan bagian dalamnya juga agak kering, tidak lembek atau lembap berlebihan.",
             "image": bnt,
             "gallery": [
                 bt2, bt3, bt4
@@ -91,7 +91,7 @@ const initialState = {
         {
             "title": "Barari Batik Kurma Tangkai Madu Algeria",
             "subtitle": "Algerian Dates",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non eaque ut. Provident id numquam dolorem sed reiciendis quaerat doloribus quisquam odit praesentium, unde iste quos officiis deserunt asperiores. Totam!",
+            "description": "Kurma Algeria dengan rasa kenyal dan legit. Kurma Madu berasal dari Algeria, yang rasanya legit sekali. Varian kurma Tunisia memang dikenal unggul. Produknya yang paling terkenal adalah deglet noor. Julukannya mentereng: queen of all dates, alias ratu dari segala jenis kurma. Teksturnya halus, tak seperti kurma lain yang kering dan keriput. Warna kulit cokelat muda dan rasa yang manis seperti madu. Jenis kurma ini banyak dibudidayakan di Algeria dan Tunisia.",
             "image": barari_select,
             "gallery": [
                 bs2, bs3, bs4

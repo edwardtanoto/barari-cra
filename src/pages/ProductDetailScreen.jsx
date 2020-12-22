@@ -58,7 +58,7 @@ export const ProductDetailScreen = ({ match }) => {
                                     <h5 className='text-capitalize'>{product.title}</h5>
                                     <p className='light-text'>{product.description}</p>
                                 </div>
-                                <div><h6>Shop Now</h6>
+                                <div><h6 className="light-text"><u>Shop Now</u></h6>
                                     <img width="36px" src={shopee} />
                                     <img width="36px" src={tokped} />
                                 </div>
