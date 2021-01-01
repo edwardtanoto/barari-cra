@@ -294,7 +294,15 @@ h6 {
 }
 .langSelect {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('./images/arrow.png');
+  background-size: 12px;
+  background-position: 50% 50%;
+
+  background-repeat: no-repeat;
 }
+
 .top {
   padding: 10px;
   background-color: #bec1a4;

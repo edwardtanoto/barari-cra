@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar, Nav, Form } from 'react-bootstrap'
 import logo from '../images/LOGO.png'
+import arrow from '../images/arrow.png'
 import ig from '../images/icon instagram.png'
 import mail from '../images/icon email.png'
 import { GlobalContext } from '../context/GlobalState';
@@ -29,6 +30,7 @@ export const Header = () => {
                     <option value="en">EN</option>
                     <option value="id">ID</option>
                 </Form.Control>
+
             </div>
             <Navbar expand="lg" style={{ position: 'relative' }}>
                 <Navbar.Brand className="d-block d-sm-block  d-lg-none d-md-block"><Link to="/"><p style={{ textAlign: 'center' }}><img alt="logo" className="logo" src={logo} /></p></Link></Navbar.Brand>
