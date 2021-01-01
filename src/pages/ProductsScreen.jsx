@@ -1,7 +1,7 @@
 import React from 'react'
 import { Product } from '../components/Product'
 
-export const ProductsScreen = ({ match, history }) => {
+export const ProductsScreen = ({ history }) => {
     return (
         <div>
             <section className="wallpaper-product"></section>

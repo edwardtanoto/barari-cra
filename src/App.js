@@ -7,6 +7,7 @@ import { AboutScreen } from './pages/AboutScreen'
 import { ProductsScreen } from './pages/ProductsScreen'
 import { GlobalProvider } from './context/GlobalState';
 import { ProductDetailScreen } from './pages/ProductDetailScreen'
+import { RetailersScreen } from './pages/RetailersScreen'
 import { ContactScreen } from './pages/ContactScreen'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Route path='/' component={HomeScreen} exact />
         <Route path='/about' component={AboutScreen} exact />
+        <Route path='/retailers' component={RetailersScreen} exact />
         <Route path='/products' component={ProductsScreen} exact />
         <Route path='/product/:product' component={ProductDetailScreen} exact />
         <Route path='/contact' component={ContactScreen} exact />

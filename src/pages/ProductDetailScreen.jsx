@@ -7,18 +7,13 @@ import { kebabcase } from '../utils/kebabcase'
 import shopee from '../images/shopee.png';
 import tokped from '../images/tokopedia-seeklogo.com.svg'
 import LazyLoad from 'react-lazyload'
-
-import barari_biru from '../images/products/bb.jpg'
-import bnt from '../images/products/bnt.jpg'
-import mm from '../images/products/mm.jpg'
-import bps from '../images/products/bps.jpg'
-import mh from '../images/products/mh.jpg'
+import { PRODUCTS } from '../context/data'
 
 export const ProductDetailScreen = ({ match }) => {
     const productmatch = match.params.product;
-    const { products } = useContext(GlobalContext);
-    const product = products.filter(product => {
-        return productmatch == kebabcase(product.title);
+    const { language } = useContext(GlobalContext);
+    const product = PRODUCTS.filter(product => {
+        return productmatch === kebabcase(product.title);
     })
 
     const images = [
@@ -45,7 +40,7 @@ export const ProductDetailScreen = ({ match }) => {
     return (
         <div id="about">
             <div className="pt-5 container">
-                {products ? product.map((product, index) => {
+                {PRODUCTS ? product.map((product) => {
                     return (
                         <Row className="container">
                             <Col md={5}>
@@ -56,14 +51,14 @@ export const ProductDetailScreen = ({ match }) => {
                             <Col md={7} className="align-self-end mb-5 mt-5">
                                 <div >
                                     <h5 className='text-capitalize'>{product.title}</h5>
-                                    <p className='light-text'>{product.description}</p>
+                                    <p className='light-text'>{language === "id" ? product.description : product.englishdesc}</p>
                                 </div>
-                                <div><h6 className="light-text"><u>Shop Now</u></h6>
-                                    <img width="36px" src={shopee} />
-                                    <img width="36px" src={tokped} />
+                                <div><h6 className="light-text"><u>{language === "en" ? 'Shop Now' : 'Belanja Sekarang'}</u></h6>
+                                    <img alt="shopee" width="36px" src={shopee} />
+                                    <img alt="tokped" width="36px" src={tokped} />
                                 </div>
                                 <div className="d-flex justify-content-end">
-                                    <Link className="a" to="/products">&lt;&lt; Back</Link>
+                                    <Link className="a" to="/products">&lt;&lt; {language === "en" ? 'Back' : 'Kembali'}</Link>
                                 </div>
                             </Col>
 
