@@ -25,7 +25,7 @@ export const Header = () => {
                     <img alt="logo" src={mail} width="36px" className="mr-2" />
                 </a>
 
-                <Form.Control as="select" style={{ width: "80px", backgroundColor: "#bec1a4", boxShadow: "none" }} onChange={handleChange}>
+                <Form.Control as="select" className="langSelect" style={{ width: "80px", backgroundColor: "#bec1a4", boxShadow: "none" }} onChange={handleChange}>
                     <option value="en">EN</option>
                     <option value="id">ID</option>
                 </Form.Control>

@@ -292,6 +292,9 @@ h6 {
   justify-content: space-between;
   padding: 30px;
 }
+.langSelect {
+  -webkit-appearance: none;
+}
 .top {
   padding: 10px;
   background-color: #bec1a4;
