@@ -21,8 +21,11 @@ export const Header = () => {
                 <a target="_blank" rel="noreferrer" href="https://instagram.com/barari.indonesia">
                     <img alt="logo" src={ig} width="30px" className="mr-2" />
                 </a>
-                <img alt="logo" src={mail} width="30px" className="mr-2" />
-                <Form.Control as="select" style={{ width: "80px", backgroundColor: "inherit", boxShadow: "none" }} onChange={handleChange}>
+                <a rel="noreferrer" href="mailto:info@barari-indonesia.com">
+                    <img alt="logo" src={mail} width="36px" className="mr-2" />
+                </a>
+
+                <Form.Control as="select" style={{ width: "80px", backgroundColor: "#bec1a4", boxShadow: "none" }} onChange={handleChange}>
                     <option value="en">EN</option>
                     <option value="id">ID</option>
                 </Form.Control>
